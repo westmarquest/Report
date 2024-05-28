@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Project 1",
+    "image": "https://example.com/image1.jpg",
+    "link": "https://example.com/project1"
+  },
+  {
+    "name": "Project 2",
+    "image": "https://example.com/image2.jpg",
+    "link": "https://example.com/project2"
+  }
+]
