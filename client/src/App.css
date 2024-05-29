@@ -1,8 +1,8 @@
 /* src/App.css */
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 .main-content {
   margin: auto;
@@ -49,13 +49,118 @@
   position: absolute;
   top: 10px;
   left: 10px;
+  z-index: 999;
 }
 
 .header-name {
   font-size: 3rem;
+  font-family: "Brush Script MT";
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-color: #070218;
+  opacity: 0.7;
+  z-index: -1;
+  text-align: center;
+}
+
+.header-name1 {
+  font-size: 3rem;
+  font-family: "Brush Script MT";
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-color: #070218;
+  opacity: 0.7;
+  z-index: -1;
+  text-align: left;
+  margin-left: 120px;
+}
+
+.hdcontainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.header-name:hover {
+  font-size: 5rem;
+}
+
+.navbar-nav {
+  display: flex; /* Apply flexbox layout */
+  flex-direction: row; /* Arrange items in a row */
+  gap: 40px;
+  font-style: oblique;
 }
 
 .header-tag {
-  font-size: 1.2rem;
+  font-size: 10px;
   font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  text-align: right;
+  position: relative;
+  margin-right: 3px;
+}
+.intro-text {
+  font-size: 15px;
+}
+h6 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h4 {
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  display: flex; /* Apply flexbox layout */
+  flex-direction: row; /* Arrange items in a row */
+  gap: 200px;
+  font-style: oblique;
+  justify-content: center;
+}
+
+.resume-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resume-container h1 {
+  margin-bottom: 20px;
+}
+
+.resume-container .download-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.resume-container .download-link:hover {
+  background-color: #0056b3;
+}
+
+.resume-container .proficiencies-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resume-container .proficiencies-list li {
+  margin: 10px 20px;
+  padding: 5px 10px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
 }

@@ -25,6 +25,35 @@ const server = new ApolloServer({
   resolvers,
 });
 
+// app.post("/send", (req, res) => {
+//   const { name, email, message } = req.body;
+
+//   // Set up nodemailer transporter
+//   const transporter = nodemailer.createTransport({
+//     service: "gmail",
+//     auth: {
+//       user: process.env.EMAIL_USER,
+//       pass: process.env.EMAIL_PASS,
+//     },
+//   });
+
+//   // Set up email options
+//   const mailOptions = {
+//     from: email,
+//     to: process.env.EMAIL_USER,
+//     subject: `Message from ${name}`,
+//     text: message,
+//   };
+
+//   // Send email
+//   transporter.sendMail(mailOptions, (error, info) => {
+//     if (error) {
+//       return res.status(500).send(error.toString());
+//     }
+//     res.status(200).send("Email sent: " + info.response);
+//   });
+// });
+
 // app.get("/marques", (req, res) => {
 //   res.send("Hello World");
 // });
@@ -43,7 +72,7 @@ const startApolloServer = async () => {
   // Define a catch-all route that serves the main HTML file
   app.get("/marques", (req, res) => {
     // Send the main HTML file of the React app
-    res.sendFile(path.join(__dirname, "client/build", "index.html"));
+    res.sendFile(path.join(__dirname, "../client/build", "index.html"));
   });
 
   app.use("/graphql", expressMiddleware(server));

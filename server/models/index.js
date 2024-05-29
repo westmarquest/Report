@@ -1,3 +1,3 @@
-// const Projects = require("./Projects");
+const Projects = require("./Projects");
 
-// module.exports = { Projects };
+module.exports = { Projects };

@@ -31,11 +31,16 @@ const Home = () => {
   return (
     <main className="main-content">
       <section className="intro">
-        <h2 className="intro-title">Welcome to My Portfolio</h2>
+        <h6 className="intro-title">Welcome</h6>
         <p className="intro-text">
-          I'm a creative technologist with a passion for innovative solutions
-          and cutting-edge technology. Explore my projects and get to know more
-          about my work.
+          Creative professional with a passion for blending design and
+          development to craft captivating digital experiences. Bringing a
+          diverse background in graphic design, product advertisement, and
+          digital production to the table, while having completed a full stack
+          development program and actively adding to my development artilery,
+          I'm enthusiastic about collaborating with the minds of tomorrow to
+          transform the ideas of today into immersive digital solutions that
+          resonate with audiences.
         </p>
       </section>
 
