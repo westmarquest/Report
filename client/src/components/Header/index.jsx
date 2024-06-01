@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import profileImage from "../../assets/unnamed.png";
-import Nav from "../Nav";
+import Nav from "../../pages/Nav";
 
 const Header = () => {
   return (

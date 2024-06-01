@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import Projects from "../components/Projects/index";
+import Projects from "./Projects";
 import { GET_PROJECTS } from "../utils/queries";
 
 // const Home = () => {
@@ -44,13 +44,13 @@ const Home = () => {
         </p>
       </section>
 
-      <div className="col-12 col-md-10 my-3">
+      {/* <div className="col-12 col-md-10 my-3">
         {loading ? (
           <div>Loading...</div>
         ) : (
           <Projects projects={projects} title="View some of my fav's below" />
         )}
-      </div>
+      </div> */}
     </main>
   );
 };

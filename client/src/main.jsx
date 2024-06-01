@@ -4,10 +4,10 @@ import React from "react";
 
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
-// import Portfolio from "./components/Projects/index.jsx";
-import Resume from "./components/Resume/index.jsx";
+import Portfolio from "./pages/Projects.jsx";
+import Resume from "./pages/Resume.jsx";
 // import Error from "./pages/Error.js";
-import Contact from "./components/Contact/index.jsx";
+import Contact from "./pages/Contact.jsx";
 import "./App.css";
 
 const router = createBrowserRouter([
@@ -20,16 +20,16 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-      // {
-      //   path: "marques/projects",
-      //   element: <Portfolio />,
-      // },
       {
-        path: "marques/resume",
+        path: "/marques/portfolio",
+        element: <Portfolio />,
+      },
+      {
+        path: "/marques/resume",
         element: <Resume />,
       },
       {
-        path: "marques/contact",
+        path: "/marques/contact",
         element: <Contact />,
       },
       // {

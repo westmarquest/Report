@@ -115,9 +115,9 @@ h4 {
 }
 
 .links {
-  display: flex; /* Apply flexbox layout */
-  flex-direction: row; /* Arrange items in a row */
-  gap: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
   font-style: oblique;
   justify-content: center;
 }
@@ -130,6 +130,9 @@ h4 {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .resume-container h1 {
@@ -163,4 +166,11 @@ h4 {
   padding: 5px 10px;
   background-color: #e0e0e0;
   border-radius: 4px;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
