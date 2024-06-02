@@ -1,7 +1,9 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Nav = () => {
+  const location = useLocation();
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
@@ -11,7 +13,7 @@ const Nav = () => {
               <NavLink
                 className="nav-link"
                 to="/marques"
-                activeclassname="active"
+                activeClassName="active"
                 exact
               >
                 About Me
@@ -21,7 +23,7 @@ const Nav = () => {
               <NavLink
                 className="nav-link"
                 to="/marques/portfolio"
-                activeclassname="active"
+                activeClassName="active"
               >
                 Portfolio
               </NavLink>
@@ -30,7 +32,7 @@ const Nav = () => {
               <NavLink
                 className="nav-link"
                 to="/marques/resume"
-                activeclassname="active"
+                activeClassName="active"
               >
                 Resume
               </NavLink>
@@ -39,7 +41,7 @@ const Nav = () => {
               <NavLink
                 className="nav-link"
                 to="/marques/contact"
-                activeclassname="active"
+                activeClassName="active"
               >
                 Contact
               </NavLink>
