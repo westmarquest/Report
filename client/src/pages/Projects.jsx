@@ -2,16 +2,14 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { GET_PROJECTS } from "../utils/queries";
 
-const Projects = ({ projects, title }) => {
-  const { loading, error, data } = useQuery(GET_PROJECTS, {
-    skip: projects && projects.length > 0,
-  });
-
+const Projects = () => {
+  const { loading, error, data } = useQuery(GET_PROJECTS);
+  console.log("data", data);
   if (loading) return <p>Loading projects...</p>;
   if (error) return <p>Error loading projects: {error.message}</p>;
 
-  const projectList = projects.length ? projects : data?.projects;
-
+  const projectList = data?.projects || {};
+  console.log("projectList", projectList);
   if (!projectList.length) {
     return <h3>No Projects Yet</h3>;
   }
@@ -22,11 +20,10 @@ const Projects = ({ projects, title }) => {
       <div className="projects">
         {projectList.map((project) => (
           <div key={project.id} className="project-card">
+            <h3>{project.name}</h3>
+            <p>{project.link}</p>
             <img src={project.image} alt={project.name} />
-            <div className="project-details">
-              <h3>{project.name}</h3>
-              <p>{project.link}</p>
-            </div>
+            <div className="project-details"></div>
           </div>
         ))}
       </div>

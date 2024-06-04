@@ -5,20 +5,9 @@ const path = require("path");
 
 const typeDefs = require("./schemas/typeDefs");
 const resolvers = require("./schemas/resolvers");
-const mongoose = require("mongoose");
 const db = require("./config/connection");
 
-// mongoose
-//   .connect("mongodb://localhost:27017/myprojectdatabase", {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   })
-//   .then(() => {
-//     console.log("MongoDB connected");
-//   })
-//   .catch((err) => console.error("MongoDB connection error:", err));
-
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const app = express();
 const server = new ApolloServer({
   typeDefs,
@@ -65,21 +54,22 @@ const startApolloServer = async () => {
 
   app.use(express.static(path.join(__dirname, "../client/build")));
 
-  app.get("/", (req, res) => {
-    res.redirect("/marques");
-  });
+  // app.get("/", (req, res) => {
+  //   res.redirect("/marques");
+  // });
 
   // Define a catch-all route that serves the main HTML file
-  app.get("/marques", (req, res) => {
-    // Send the main HTML file of the React app
-    res.sendFile(path.join(__dirname, "../client/build", "index.html"));
-  });
+  // app.get("/marques", (req, res) => {
+  // Send the main HTML file of the React app
+  //   res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+  // });
 
   app.use("/graphql", expressMiddleware(server));
 
-  // Start the server
-  app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
+  db.once("open", () => {
+    app.listen(PORT, () => {
+      console.log(`Server is listening on port ${PORT}`);
+    });
   });
 };
 

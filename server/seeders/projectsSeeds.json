@@ -1,12 +1,27 @@
 [
   {
-    "name": "Project 1",
-    "image": "https://example.com/image1.jpg",
-    "link": "https://example.com/project1"
+    "name": "Javascript Test",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZndmcGR3ZG9sNnIxaXhwOTZ1bXF6NWNvOTdvdzVjeXBpbG1kaGFqZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UgtgIFEGOQhUYbae77/giphy-downsized-large.gif",
+    "link": "https://westmarquest.github.io/Javascript-Quiz/"
   },
   {
-    "name": "Project 2",
-    "image": "https://example.com/image2.jpg",
-    "link": "https://example.com/project2"
+    "name": "Note Taker",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGhrcGc5bndrcHVuMmdvNmczZm53cDI2a3lraGlpNHpwZTl2dHBwMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/m6txrs9ilB3VizCAPN/giphy.gif",
+    "link": "https://note-taker-west-cb10c0a3fcaf.herokuapp.com/notes"
+  },
+  {
+    "name": "Weather Forecast",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3Q1aTMyeWZid2NtNnI3cWJ4bzljYmF6ZnI3YzU1eW11d2IzbGFnYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vqxblHpAdXtHt1jgvK/giphy.gif",
+    "link": "https://westmarquest.github.io/weather-app/"
+  },
+  {
+    "name": "Skate App",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2t1cmpxaHQ5aW1ieXZvcW5ucHVtMnU1Zm0yeXA3YXhoemUwbHQxNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bZ0TzYcfVIjxncH2Uu/giphy.gif",
+    "link": "https://skate4-8a6f29e87cee.herokuapp.com/login"
+  },
+  {
+    "name": "Scheduler",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2w2dm1ucDQ4cmt0eDVkbTZqdzUxNmJnd25zOGYxN2Fla3hhdWZ3YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CvvHauqJJXhHMUeqsC/giphy.gif",
+    "link": "https://westmarquest.github.io/Scheduler3/"
   }
 ]
