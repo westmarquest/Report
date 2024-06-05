@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 import Projects from "./Projects";
-import { GET_PROJECTS } from "../utils/queries";
+import { GET_PROJECTS } from "../../../server/utils/queries";
 
 // const Home = () => {
 //   const { loading, error, data } = useQuery(GET_PROJECTS);

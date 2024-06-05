@@ -13,7 +13,7 @@ const Nav = () => {
               <NavLink
                 className="nav-link"
                 to="/marques"
-                activeClassName="active"
+                activeclassname="active"
                 exact
               >
                 About Me
@@ -23,7 +23,7 @@ const Nav = () => {
               <NavLink
                 className="nav-link"
                 to="/marques/portfolio"
-                activeClassName="active"
+                activeclassname="active"
               >
                 Portfolio
               </NavLink>
@@ -32,7 +32,7 @@ const Nav = () => {
               <NavLink
                 className="nav-link"
                 to="/marques/resume"
-                activeClassName="active"
+                activeclassname="active"
               >
                 Resume
               </NavLink>
@@ -41,7 +41,7 @@ const Nav = () => {
               <NavLink
                 className="nav-link"
                 to="/marques/contact"
-                activeClassName="active"
+                activeclassname="active"
               >
                 Contact
               </NavLink>

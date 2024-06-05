@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import { GET_PROJECTS } from "../utils/queries";
+import { GET_PROJECTS } from "../../../server/utils/queries";
 
 const Projects = () => {
   const { loading, error, data } = useQuery(GET_PROJECTS);
@@ -21,8 +21,10 @@ const Projects = () => {
         {projectList.map((project) => (
           <div key={project.id} className="project-card">
             <h3>{project.name}</h3>
-            <p>{project.link}</p>
-            <img src={project.image} alt={project.name} />
+            {/* <p>{project.link}</p> */}
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <img src={project.image} alt={project.name} />
+            </a>
             <div className="project-details"></div>
           </div>
         ))}

@@ -31,12 +31,14 @@ const Footer = () => {
             GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/marquesturner"
+            href="https://www.linkedin.com/in/createwithmarques?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvkAJ6s2USEeHcBVkfn5%2Bog%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="text-decoration-none text-dark mx-2"
             onClick={() =>
-              openInNewTab("https://www.linkedin.com/in/marquesturner")
+              openInNewTab(
+                "https://www.linkedin.com/in/createwithmarques?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvkAJ6s2USEeHcBVkfn5%2Bog%3D%3D"
+              )
             }
           >
             LinkedIn

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ContactForm = () => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,47 +17,38 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = {};
+
     if (!formData.name.trim()) {
       validationErrors.name = "Name is required";
     }
     if (!formData.email.trim()) {
       validationErrors.email = "Email is required";
-    } else if (!isValidEmail(formData.email)) {
-      validationErrors.email = "Invalid email address";
     }
     if (!formData.message.trim()) {
       validationErrors.message = "Message is required";
     }
+
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
-      console.log("Form submitted:", formData);
+      // Code to send form data to the backend for email sending
+      // This part can be added based on your backend setup
+      // It should make a POST request to your backend endpoint
+
       setAlert("Email sent successfully!");
       setFormData({ name: "", email: "", message: "" });
       setErrors({});
+
       setTimeout(() => {
-        // Redirect to /marques after a short delay
-        window.location.href = "/marques";
+        window.location.href = "/marques"; // Redirect after a delay
       }, 3000);
     }
   };
 
-  const isValidEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-
   return (
-    <div
-      className="alert"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      {alert}
-
+    <div>
+      <h1>Contact Me</h1>
+      {alert && <div className="alert">{alert}</div>}
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name</label>
@@ -97,4 +88,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Contact;
