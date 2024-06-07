@@ -31,14 +31,14 @@ const Contact = () => {
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
-      // Code to send form data to the backend for email sending
-      // This part can be added based on your backend setup
-      // It should make a POST request to your backend endpoint
+      // Log form data to the console
+      console.log("Form Data Submitted:", formData);
 
-      setAlert("Email sent successfully!");
+      setAlert("Form data logged successfully!");
       setFormData({ name: "", email: "", message: "" });
       setErrors({});
 
+      // Optional redirect after logging form data
       setTimeout(() => {
         window.location.href = "/marques"; // Redirect after a delay
       }, 3000);

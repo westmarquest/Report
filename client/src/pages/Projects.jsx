@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import { GET_PROJECTS } from "../../../server/utils/queries";
+import { GET_PROJECTS } from "../utils/queries";
 
 const Projects = () => {
   const { loading, error, data } = useQuery(GET_PROJECTS);
