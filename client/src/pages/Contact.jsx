@@ -14,7 +14,7 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = {};
 
@@ -31,58 +31,48 @@ const Contact = () => {
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
-      // Log form data to the console
-      console.log("Form Data Submitted:", formData);
+      try {
+        const response = await fetch("https://formspree.io/f/xdknnkwb", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
 
-      setAlert("Form data logged successfully!");
-      setFormData({ name: "", email: "", message: "" });
-      setErrors({});
-
-      // Optional redirect after logging form data
-      setTimeout(() => {
-        window.location.href = "/marques"; // Redirect after a delay
-      }, 3000);
+        if (response.ok) {
+          setAlert("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" });
+          setErrors({});
+        } else {
+          throw new Error("Failed to send message");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        setAlert("Failed to send message. Please try again later.");
+      }
     }
   };
 
   return (
     <div>
-      <h1>Contact Me</h1>
-      {alert && <div className="alert">{alert}</div>}
-      <form onSubmit={handleSubmit}>
-        <div>
+      <h1 className="contact-header">Contact Me</h1>
+      <form action="https://formspree.io/f/xdknnkwb" method="POST">
+        <div className="cont-name">
           <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-          />
-          {errors.name && <p className="error">{errors.name}</p>}
+          <input type="text" id="name" name="name" required />
         </div>
-        <div>
+        <div className="cont-email">
           <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-          />
-          {errors.email && <p className="error">{errors.email}</p>}
+          <input type="email" id="email" name="email" required />
         </div>
-        <div>
+        <div className="cont-mess">
           <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleInputChange}
-          ></textarea>
-          {errors.message && <p className="error">{errors.message}</p>}
+          <textarea id="message" name="message" rows="4" required></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-button">
+          Submit
+        </button>
       </form>
     </div>
   );

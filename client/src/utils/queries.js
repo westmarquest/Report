@@ -7,7 +7,6 @@ export const GET_PROJECTS = gql`
       _id
       name
       image
-      link
     }
   }
 `;
@@ -19,7 +18,6 @@ export const GET_PROJECT = gql`
       id
       name
       image
-      link
     }
   }
 `;

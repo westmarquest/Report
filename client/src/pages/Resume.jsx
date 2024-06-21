@@ -1,6 +1,6 @@
 // components/Resume/index.jsx
 import React from "react";
-import resumeImage from "../assets/Marques_Turner_-_Developer_Designer (3).jpg"; // Import the image file
+import resumeImage from "../assets/MarquesTurner-RES24.jpg";
 
 const Resume = () => {
   return (
@@ -14,11 +14,11 @@ const Resume = () => {
     >
       <img src={resumeImage} alt="Resume" className="resume-image" />{" "}
       <a
-        href="../assets/Marques_Turner_-_Developer_Designer (3).jpg"
-        download="../assets/Marques_Turner_-_Developer_Designer (3).jpg"
+        href="https://drive.google.com/uc?export=download&id=1HoB2D_Tc38NozRdISP4HoAgXGIavefQT"
+        download="MarquesTurner-RES24.jpg"
         className="download-link"
       >
-        Download PDF
+        Download
       </a>
       {/* <h2>Proficiencies</h2>
       <ul>

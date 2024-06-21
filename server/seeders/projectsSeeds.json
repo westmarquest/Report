@@ -23,5 +23,10 @@
     "name": "Scheduler",
     "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2w2dm1ucDQ4cmt0eDVkbTZqdzUxNmJnd25zOGYxN2Fla3hhdWZ3YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CvvHauqJJXhHMUeqsC/giphy.gif",
     "link": "https://westmarquest.github.io/Scheduler3/"
+  },
+  {
+    "name": "Workstation",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2N6dW14dXhnMDd6aXo4NmFvN2c5ZTA4ZXdqNmdhOGQ3YW0xNXY3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/J7yGIiyDMf5hkUtJon/giphy-downsized-large.gif",
+    "link": "https://app-workstation.onrender.com/"
   }
 ]
