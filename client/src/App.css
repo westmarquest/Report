@@ -100,6 +100,13 @@
   flex-direction: row; /* Arrange items in a row */
   gap: 40px;
   font-style: oblique;
+  margin-left: 20px;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  filter: brightness(1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header-tag {
