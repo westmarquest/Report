@@ -42,7 +42,6 @@ const Projects = () => {
           </div>
         ))}
       </div>
-
       {/* Right column for static repository links */}
       <div className="repo-column">
         <div className="repo">Repositories</div>

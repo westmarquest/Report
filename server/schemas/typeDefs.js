@@ -6,6 +6,7 @@ const typeDefs = gql`
     _id: ID!
     name: String
     image: String
+    link: String
   }
 
   type Query {
