@@ -68,7 +68,7 @@ const Projects = () => {
               )
             }
           >
-            Weather Forecast
+            Forecast
           </button>
           <button
             className="repo-link-button"

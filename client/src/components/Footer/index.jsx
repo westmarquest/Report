@@ -33,13 +33,13 @@ const Footer = () => {
             LinkedIn
           </button>
           <button
-            className="btn btn-dark mx-3"
+            className="btn btn-dark mx-5"
             onClick={() =>
               openInNewTab("https://adigitprod.wixsite.com/digitproductions")
             }
             style={{ textShadow: "1px 1px 1px #888787" }}
           >
-            My Production Site
+            Production
           </button>
         </div>
       </div>

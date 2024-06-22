@@ -14,11 +14,11 @@ const Resume = () => {
     >
       <img src={resumeImage} alt="Resume" className="resume-image" />{" "}
       <a
-        href="https://drive.google.com/uc?export=download&id=1HoB2D_Tc38NozRdISP4HoAgXGIavefQT"
-        download="MarquesTurner-RES24.jpg"
+        href="https://drive.google.com/file/d/10D5K7R1j6_HZadufPT8c3NOI8VdP0wtL/view?usp=share_link"
+        download="MarquesTurner-RES24.pdf"
         className="download-link"
       >
-        Download
+        Download PDF
       </a>
       {/* <h2>Proficiencies</h2>
       <ul>

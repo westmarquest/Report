@@ -11,6 +11,14 @@ const Header = () => {
         <div className="header-name">
           <h1 className="header-name1">Marques Turner</h1>
           <img src={logoImage} alt="Logo" className="logo-image" />
+          <a
+            href="https://www.adigitprod.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="emoji-link"
+          >
+            🎥
+          </a>
           <p className="header-tag">- a scriptSymphony</p>
         </div>
       </div>
