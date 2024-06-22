@@ -121,8 +121,6 @@ const Projects = () => {
           </button>
         </div>
       </div>
-
-      <div className="click-here">Click to visit site👉</div>
     </div>
   );
 };
