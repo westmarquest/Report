@@ -88,6 +88,55 @@ const Projects = () => {
           >
             Workstation
           </button>
+
+          <button
+            className="repo-link-button"
+            onClick={() =>
+              window.open(
+                "https://github.com/westmarquest/Generate-Password",
+                "_blank"
+              )
+            }
+          >
+            PW Generator
+          </button>
+
+          <button
+            className="repo-link-button"
+            onClick={() =>
+              window.open(
+                "https://github.com/westmarquest/bookSearch",
+                "_blank"
+              )
+            }
+          >
+            Book Search
+          </button>
+
+          <button
+            className="repo-link-button"
+            onClick={() =>
+              window.open(
+                "https://github.com/westmarquest/ecommerce1",
+                "_blank"
+              )
+            }
+          >
+            Ecommerce DB
+          </button>
+
+          <button
+            className="repo-link-button"
+            onClick={() =>
+              window.open(
+                "https://github.com/westmarquest/readmegenerator",
+                "_blank"
+              )
+            }
+          >
+            ReadMe Gen
+          </button>
+
           <button
             className="repo-link-button"
             onClick={() =>
@@ -103,6 +152,17 @@ const Projects = () => {
             className="repo-link-button"
             onClick={() =>
               window.open(
+                "https://github.com/westmarquest/logogeneratorr",
+                "_blank"
+              )
+            }
+          >
+            Logo Generator
+          </button>
+          <button
+            className="repo-link-button"
+            onClick={() =>
+              window.open(
                 "https://github.com/westmarquest/Scheduler3",
                 "_blank"
               )
@@ -110,6 +170,19 @@ const Projects = () => {
           >
             Scheduler
           </button>
+
+          <button
+            className="repo-link-button"
+            onClick={() =>
+              window.open(
+                "https://github.com/westmarquest/employee-tracker",
+                "_blank"
+              )
+            }
+          >
+            Emp Tracker
+          </button>
+
           <button
             className="repo-link-button"
             onClick={() =>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import profileImage from "../../assets/unnamed.png";
+import nameImage from "../../assets/namecur.png";
 import logoImage from "../../assets/profcutout.png";
 import Nav from "../../pages/Nav";
 
@@ -10,6 +11,7 @@ const Header = () => {
         <img src={profileImage} alt="Profile" className="profile-image" />
         <div className="header-name">
           <h1 className="header-name1">Marques Turner</h1>
+          <img src={nameImage} alt="Name" className="name-image" />
           <img src={logoImage} alt="Logo" className="logo-image" />
           <a
             href="https://www.adigitprod.com"

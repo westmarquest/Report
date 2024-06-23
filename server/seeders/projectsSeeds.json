@@ -28,5 +28,35 @@
     "name": "Workstation",
     "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2N6dW14dXhnMDd6aXo4NmFvN2c5ZTA4ZXdqNmdhOGQ3YW0xNXY3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/J7yGIiyDMf5hkUtJon/giphy-downsized-large.gif",
     "link": "https://app-workstation.onrender.com/"
+  },
+  {
+    "name": "PW Generator",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWt5cHM0cXN6bnY5bnBnNWc3bGw4YzUzNXowbmtpcXFuemt5OXdnOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3tnG0U2tE7T7y6vR7Q/giphy.gif",
+    "link": "https://westmarquest.github.io/Generate-Password/"
+  },
+  {
+    "name": "Book Search",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHFjNW1sZzhzbDhoajI1MnBuZjNrazcxa2x4MDBmc2NtOHVkdDhuMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3pAmgmJMZediDTcoL8/giphy.gif",
+    "link": "https://booksearching.onrender.com/"
+  },
+  {
+    "name": "ReadMe Gen",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWljZWNibDFoMmU0YzdlNmh1YXNoZG04bnl3OTQ0MHo3czAxbGtrdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xnpOz87vKRJdMQIHf4/giphy-downsized-large.gif",
+    "link": "https://github.com/westmarquest/readmegenerator?tab=readme-ov-file"
+  },
+  {
+    "name": "Ecommerce DB",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmpoc2hxNGttMTIxYXc0MDJxaTh3cjhwYWEydHlsd3Exbnk3NXoweSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ySYiBSyshCv7VJIVRF/giphy-downsized-large.gif",
+    "link": "https://github.com/westmarquest/ecommerce1"
+  },
+  {
+    "name": "Employee Tracker",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmxqcnJyMnZoMDl3ZXI4dm9xcDlxYXpwczc2c3d3NzBybms1OG5laSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ogfb4do82ZmZLvkNxx/giphy-downsized-large.gif",
+    "link": "https://github.com/westmarquest/employee-tracker"
+  },
+  {
+    "name": "Logo Generator",
+    "image": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXJwcGJ6bGVicHZpaDJxMWRhdWp1ajdiOXc3eTQzem9uOGZwZ2diMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FUYsjtSFQRNBdnFzE5/giphy.gif",
+    "link": "https://github.com/westmarquest/logogeneratorr"
   }
 ]

@@ -1,9 +1,3 @@
-/* src/App.css */
-
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 .flex-column {
   background-color: rgb(198, 198, 198);
 }
@@ -84,6 +78,27 @@
   font-weight: 300;
   letter-spacing: -0.02em;
   line-height: 1.1;
+  display: none;
+}
+
+.name-image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 1%;
+  margin-top: 20px;
+  text-shadow: 1px 1px 1px #888787;
+  opacity: 0.7;
+  z-index: -1;
+  position: relative;
+}
+
+.name-image {
+  max-width: 35%;
+  max-height: 100%;
+  margin-left: -51%;
+  margin-top: 10px;
 }
 
 .hdcontainer {
@@ -91,13 +106,9 @@
   justify-content: center;
 }
 
-.header-name:hover {
-  font-size: 5rem;
-}
-
 .navbar-nav {
-  display: flex; /* Apply flexbox layout */
-  flex-direction: row; /* Arrange items in a row */
+  display: flex;
+  flex-direction: row;
   gap: 40px;
   font-style: oblique;
   margin-left: 20px;
@@ -107,6 +118,7 @@
   transform: scale(1.05);
   filter: brightness(1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
 }
 
 .header-tag {
@@ -208,80 +220,76 @@ h4 {
 }
 
 .projects {
-  width: 80%; /* Default width for larger screens */
-  height: auto; /* Height determined by content */
-  display: grid; /* Use grid layout */
-  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns equally spaced */
-  grid-gap: 20px; /* Space between columns */
-  justify-content: center; /* Center the container horizontally */
-  align-items: center; /* Center items vertically */
-  margin: 0 auto; /* Center the container horizontally */
-  transition: all 0.3s ease-in-out; /* Smooth transition for responsiveness */
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects img {
-  width: 100%; /* Responsive width */
-  height: 137.13px; /* Maintain aspect ratio */
-  margin: 10px 0; /* Adjust margin */
+  width: 100%;
+  height: 137.13px;
+  margin: 10px 0;
 }
 
-/* For medium screens */
 @media (max-width: 1024px) {
   .projects {
-    width: 90%; /* Adjust width for medium screens */
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
-    grid-gap: 15px; /* Adjust gap for medium screens */
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
   }
 }
 
-/* For small screens */
 @media (max-width: 768px) {
   .projects {
-    width: 95%; /* Adjust width for small screens */
-    grid-template-columns: 1fr; /* 1 column for small screens */
-    grid-gap: 10px; /* Adjust gap for small screens */
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
 }
 
-/* For extra small screens */
 @media (max-width: 480px) {
   .projects {
-    width: 100%; /* Full width for extra small screens */
-    grid-template-columns: 1fr; /* 1 column for extra small screens */
-    grid-gap: 5px; /* Adjust gap for extra small screens */
-    padding: 0 10px; /* Add padding to avoid touching screen edges */
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 0 10px;
   }
 }
 
 .projects img {
-  width: 100%; /* Responsive width */
-  height: 137.13px; /* Maintain aspect ratio */
-  margin: 10px 0; /* Adjust margin */
+  width: 100%;
+  height: 137.13px;
+  margin: 10px 0;
 }
 
-/* Adjustments for different screen sizes */
 @media (max-width: 1024px) {
   .projects img {
-    width: 90%; /* Slightly reduced width for medium screens */
+    width: 90%;
   }
 }
 
 @media (max-width: 768px) {
   .projects img {
-    width: 80%; /* Further reduced width for small screens */
+    width: 80%;
   }
 }
 
 @media (max-width: 480px) {
   .projects img {
-    width: 100%; /* Full width for extra small screens */
-    margin: 5px 0; /* Adjust margin for extra small screens */
+    width: 100%;
+    margin: 5px 0;
   }
 }
 
 .project-details .button {
   display: inline-block;
-  padding: 8px 16px; /* Default padding */
+  padding: 8px 16px;
   margin-top: 8px;
   background-color: #007bff;
   color: white;
@@ -289,28 +297,26 @@ h4 {
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s;
-  font-size: 1rem; /* Default font size */
+  font-size: 1rem;
 }
 
-/* Adjustments for different screen sizes */
 @media (max-width: 1024px) {
   .project-details .button {
-    padding: 7px 14px; /* Slightly reduced padding for medium screens */
-    font-size: 0.9rem; /* Slightly smaller font size */
+    padding: 7px 14px;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 768px) {
   .project-details .button {
-    padding: 6px 12px; /* Further reduced padding for small screens */
-    font-size: 0.8rem; /* Smaller font size */
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
   .project-details .button {
-    padding: 5px 10px; /* Minimal padding for extra small screens */
-    font-size: 0.75rem; /* Smaller font size for better fit */
+    padding: 5px 10px;
   }
 }
 
@@ -372,18 +378,18 @@ h3 {
   z-index: -1;
   text-align: left;
   margin-top: 1%;
-  margin-left: 40px;
+  margin-left: 6%;
 }
 
 .project-page-container {
   display: flex;
   justify-content: space-between;
-  padding: 20px; /* Optional: add padding around the container */
+  padding: 20px;
 }
 
 .project-list {
   flex: 3;
-  margin-right: 20px; /* Space between the main and right columns */
+  margin-right: 20px;
 }
 
 .project-card h3 {
@@ -393,24 +399,52 @@ h3 {
 
 .repo-column {
   flex: 1;
-  border-left: 1px solid #ccc; /* Grey dividing line */
+  border-left: 1px solid #ccc;
   padding-left: 20px;
   position: absolute;
-  width: 180px;
-  top: 129px;
+  width: 180px; /* Base width for larger screens */
+  top: 150px; /* Base position for larger screens */
   right: 15px;
   z-index: 999;
 }
 
+/* Medium screens (e.g., tablets) */
+@media (max-width: 1024px) {
+  .repo-column {
+    width: 150px; /* Adjust width for medium screens */
+    top: 140px; /* Adjust position for medium screens */
+  }
+}
+
+/* Small screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .repo-column {
+    width: 120px; /* Adjust width for small screens */
+    top: 120px; /* Adjust position for small screens */
+    right: 10px; /* Adjust horizontal position if needed */
+    padding-left: 10px; /* Reduce padding for smaller screens */
+  }
+}
+
+/* Extra small screens (e.g., very small mobile devices) */
+@media (max-width: 480px) {
+  .repo-column {
+    width: 100px; /* Further adjust width for extra small screens */
+    top: 100px; /* Further adjust position for extra small screens */
+    right: 5px; /* Further adjust horizontal position if needed */
+    padding-left: 5px; /* Further reduce padding */
+  }
+}
+
 .repo-column h3 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .repo-links {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Space between the buttons */
+  gap: 10px;
 }
 
 .repo-link-button {
@@ -441,7 +475,7 @@ h3 {
   z-index: -1;
   text-align: left;
   margin-top: 1%;
-  margin-bottom: 1px;
+  margin-bottom: 6px;
 }
 
 .contact-header {
@@ -479,22 +513,19 @@ h3 {
 }
 
 .submit-button {
-  position: relative; /* Position fixed to keep it centered on the screen */
-  top: 0%; /* Move the element down by 50% of the viewport height */
-  left: 50%; /* Move the element horizontally by 50% of the viewport width */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Center the element both vertically and horizontally */
-  z-index: 999; /* Set a high z-index to ensure it's on top of other content */
-
-  /* Additional styling for space above and below */
-  margin-top: 50px; /* Add more space above */
-  margin-bottom: 10px; /* Add more space below */
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 6px;
 }
 
-.submit-button:hover h3 {
-  filter: brightness(1.1); /* Adjust brightness for the project name */
+.submit-button:hover {
+  filter: brightness(1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #name,
@@ -507,7 +538,6 @@ h3 {
   box-sizing: border-box;
 }
 
-/* Targeting textarea by ID */
 #message {
   width: 100%;
   padding: 8px;
@@ -536,7 +566,7 @@ h3 {
 }
 
 .project-card:hover h3 {
-  filter: brightness(1.1); /* Adjust brightness for the project name */
+  filter: brightness(1.1);
 }
 
 .emoji-link {
@@ -552,6 +582,6 @@ h3 {
 }
 
 .emoji-link:hover {
-  transform: scale(1.2); /* Enlarges the emoji on hover */
-  color: #ff4500; /* Changes color on hover */
+  transform: scale(1.2);
+  color: #ff4500;
 }
