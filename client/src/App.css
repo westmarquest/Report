@@ -122,13 +122,13 @@
 }
 
 .header-tag {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Brush Script MT";
   align-items: center;
   text-align: right;
   position: relative;
-  margin-right: 3px;
+  margin-right: 6px;
   color: rgb(211, 209, 209);
   text-shadow: #e0e0e0;
   margin-bottom: 0px;
