@@ -53,5 +53,5 @@ The portfolio is built using modern web technologies and tools:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
 ![portphoto](https://github.com/westmarquest/Report/assets/153345373/a63a2040-5e4d-4e02-b66e-2e87c17f9a07)
