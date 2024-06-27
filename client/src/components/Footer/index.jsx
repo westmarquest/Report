@@ -15,14 +15,14 @@ const Footer = () => {
       <div className="container text-center mb-5">
         <div className="links">
           <button
-            className="btn btn-dark btn-custom-border mx-5"
+            className="Git-btn btn-dark btn-custom-border mx-5"
             onClick={() => openInNewTab("https://github.com/westmarquest")}
             style={{ textShadow: "1px 1px 1px #888787" }}
           >
             GitHub
           </button>
           <button
-            className="btn btn-dark mx-1"
+            className="Link-btn btn-dark mx-1"
             onClick={() =>
               openInNewTab(
                 "https://www.linkedin.com/in/createwithmarques?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvkAJ6s2USEeHcBVkfn5%2Bog%3D%3D"
@@ -33,7 +33,7 @@ const Footer = () => {
             LinkedIn
           </button>
           <button
-            className="btn btn-dark mx-5"
+            className="Prod-btn btn-dark mx-5"
             onClick={() =>
               openInNewTab("https://adigitprod.wixsite.com/digitproductions")
             }
