@@ -403,7 +403,7 @@ h3 {
   padding-left: 20px;
   position: absolute;
   width: 180px; /* Base width for larger screens */
-  top: 22.35%; /* Base position for larger screens */
+  top: 154px; /* Base position for larger screens */
   right: 15px;
   z-index: 999;
 }
@@ -584,4 +584,82 @@ h3 {
 .emoji-link:hover {
   transform: scale(1.2);
   color: #ff4500;
+}
+
+/* .footer {
+  margin-bottom: 0%;
+} */
+
+.open-game-button {
+  position: fixed;
+  left: 2px; /* Adjust as per your design */
+  top: 50%; /* Center vertically relative to the viewport */
+  transform: translateY(
+    -50%
+  ); /* Adjusts vertically by half of its own height */
+  z-index: 1000; /* Ensure it's above other content */
+  background-color: #036cdcc3;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: small;
+  width: 80px;
+  height: 44px;
+  display: flex; /* Center the text horizontally and vertically */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  border-radius: 3px;
+}
+
+.game-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000; /* Ensure it's above the overlay */
+}
+
+.game-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  height: 80%;
+  max-height: 600px;
+  background-color: white;
+  padding: 40px;
+}
+
+.close-game-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px; /* Adjust padding as needed */
+  border: 2px solid #888888; /* Grey outline */
+  cursor: pointer;
+  font-size: 1rem; /* Adjust font size as needed */
+  line-height: 1; /* Ensures the text is vertically centered */
+  border-radius: 7px;
+}
+
+.close-game-button:focus {
+  outline: none; /* Optional: Remove default focus outline */
+}
+
+.close-game-button:hover {
+  border-color: #555555; /* Darker grey on hover */
+  background-color: #1466be80;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }

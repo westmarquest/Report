@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
@@ -12,6 +12,7 @@ import Portfolio from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Nav from "./pages/Nav";
+import GameModal from "./pages/GameModal";
 
 const client = new ApolloClient({
   uri: "/graphql",
@@ -19,6 +20,16 @@ const client = new ApolloClient({
 });
 
 function App() {
+  const [isGameOpen, setIsGameOpen] = useState(false);
+
+  const openGame = () => {
+    setIsGameOpen(true);
+  };
+
+  const closeGame = () => {
+    setIsGameOpen(false);
+  };
+
   return (
     <ApolloProvider client={client}>
       <div className="flex-column justify-flex-start min-100-vh">
@@ -26,7 +37,11 @@ function App() {
         <div className="container">
           <Outlet />
         </div>
+        {isGameOpen && <GameModal onClose={closeGame} />}
         <Footer />
+        <button className="open-game-button" onClick={openGame}>
+          Play a Game?
+        </button>
       </div>
     </ApolloProvider>
   );
