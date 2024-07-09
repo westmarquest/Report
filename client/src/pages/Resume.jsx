@@ -1,6 +1,6 @@
 // components/Resume/index.jsx
 import React from "react";
-import resumeImage from "../assets/MarquesTurner-RES24.jpg";
+import resumeImage from "../assets/MT MArkSpec 24.jpg";
 
 const Resume = () => {
   return (
@@ -14,8 +14,8 @@ const Resume = () => {
     >
       <img src={resumeImage} alt="Resume" className="resume-image" />{" "}
       <a
-        href="https://drive.google.com/file/d/10D5K7R1j6_HZadufPT8c3NOI8VdP0wtL/view?usp=share_link"
-        download="MarquesTurner-RES24.pdf"
+        href="https://drive.google.com/file/d/1f9cUlkvCTWzsZAXfAVR9Urozu4rn8RrO/view?usp=sharing"
+        download="MT MArkSpec 24.pdf"
         className="download-link"
       >
         Download PDF
